@@ -59,7 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Inter, sans-serif"
             }
         },
-        { slug: "real-estate-app", title: "Plateforme Immobilière", category: "figma", tags: ["Figma", "UI/UX", "Immobilier", "Web App"], shortDesc: "Application web de vente et location de maisons et appartements.", coverImage: "/images/projects/real-estate-app/cover.jpg" },
+        {
+            slug: "real-estate-app", title: "Plateforme Immobilière", category: "figma", tags: ["Figma", "UI/UX", "Immobilier", "Web App"], shortDesc: "Application web de vente et location de maisons et appartements.", coverImage: "images/Rectangle 294.png",
+            details: {
+                goal: "Une application web qui permet aux utilisateurs de louer et d'achter des maisons et aussi aux propriétaires de publier leurs maisons à louer ou à vendre",
+                colors: ["#D46842", "#66433F", "#ffffff", "#000000", "#E9D0BD", "#A77F73"],
+                typography: "Arial, Inter, Georgia, Arvo"
+            }
+        },
         { slug: "moov-togo-platform", title: "Plateforme Moov Togo", category: "figma", tags: ["Figma", "UI/UX", "Télécom", "Web App"], shortDesc: "Plateforme de restitution de crédit et gestion de forfaits pour Moov Togo.", coverImage: "/images/projects/moov-togo-platform/cover.jpg" },
         { slug: "agri-tracking-app", title: "Application Agricole", category: "figma", tags: ["Figma", "UI/UX", "Agriculture", "Web App"], shortDesc: "Application web de suivi des cultures, plantations et ventes agricoles.", coverImage: "/images/projects/agri-tracking-app/cover.jpg" },
         { slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "/images/projects/stock-management-app/cover.jpg" },
