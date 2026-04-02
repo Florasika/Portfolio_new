@@ -69,7 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "/images/projects/projet-secours-app/cover.jpg" },
         { slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "/images/projects/serigraphie-app/cover.jpg" },
         { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "/images/projects/sotral-togo-app/cover.jpg" },
-        { slug: "cinema-app", title: "Application Cinéma", category: "figma", tags: ["Figma", "UI/UX", "Divertissement", "Web & Mobile App"], shortDesc: "Application web et mobile de cinéma avec sélection de siège, paiement mobile et gestion côté administrateur.", coverImage: "/images/projects/cinema-app/cover.jpg" },
+        {
+            slug: "cinema-app",
+            title: "Application Cinéma",
+            category: "figma",
+            tags: ["Figma", "UI/UX", "Divertissement", "Web & Mobile App"],
+            shortDesc: "Application web et mobile de cinéma avec sélection de siège, paiement mobile et gestion côté administrateur.",
+            coverImage: "images/Rectangle 64.png",
+            fullDesc: "Une solution complète permettant aux utilisateurs de réserver leurs places en temps réel via une interface intuitive. Inclus : système de paiement sécurisé, QR codes pour les tickets et un tableau de bord administrateur pour la gestion des films et des salles."
+        },
         { slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "/images/projects/cuisine-app/cover.jpg" },
         { slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "/images/projects/colis-tracking-app/cover.jpg" },
         { slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "/images/projects/formation-digitale-platform/cover.jpg" },
