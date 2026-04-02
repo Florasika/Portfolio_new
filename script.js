@@ -74,7 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Poppins, Inter"
             }
          },
-        { slug: "agri-tracking-app", title: "Application Agricole", category: "figma", tags: ["Figma", "UI/UX", "Agriculture", "Web App"], shortDesc: "Application web de suivi des cultures, plantations et ventes agricoles.", coverImage: "/images/projects/agri-tracking-app/cover.jpg" },
+        { slug: "agri-tracking-app", title: "Application Agricole", category: "figma", tags: ["Figma", "UI/UX", "Agriculture", "Web App"], shortDesc: "Application web de suivi des cultures, plantations et ventes agricoles.", coverImage: "images/647shots_so.png", 
+            details: {
+                goal: "Une application web de suivi des cultures, plantations et ventes agricoles, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#499205", "#DC0000", "#ffffff", "#000000", "#645900", "#EEC201"],
+                typography: "Inter"
+            }
+        },
         { slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "/images/projects/stock-management-app/cover.jpg" },
         { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "/images/projects/miss-defitech-vote/cover.jpg" },
         { slug: "taxi-mobile-app", title: "Application Mobile TAXI", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile de taxi avec choix du véhicule, suivi du trajet et paiement mobile.", coverImage: "/images/projects/taxi-mobile-app/cover.jpg" },
