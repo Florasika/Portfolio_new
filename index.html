@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Flora</a>
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="nav-links desktop-only">
+        <a href="services.html">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="btn btn-primary glow-pink btn-sm">Contact</a>
+      </div>
+      <button class="theme-toggle-btn ml-2" aria-label="Changer le thème"
+        style="background: none; border: none; cursor: pointer; color: var(--text-color); display: flex; align-items: center; justify-content: center; padding: 0.5rem;">
+        <svg class="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" style="display: none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero relative-container"
+    style="text-align: left; align-items: flex-start; display: flex; flex-direction: column;">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <div class="z-10 container" style="margin-left: 0; padding-left: 1.5rem;">
+      <div class="badge mb-6">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-1">
+          <path
+            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+        </svg>
+        Disponible pour des projets
+      </div>
+
+      <h1 class="hero-title">
+        Designer UI/UX & <br>
+        <span class="text-gradient">Développeuse</span> Front-End
+      </h1>
+
+      <p class="hero-description text-muted">
+        Je crée de belles expériences numériques centrées sur l'utilisateur qui aident les entreprises à se développer.
+        Spécialisée en design UI/UX, développement WordPress et applications React.
+      </p>
+
+      <div class="button-group">
+        <a href="contact.html" class="btn btn-primary glow-pink btn-lg">
+          Démarrer un projet
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <a href="portfolio.html" class="btn btn-outline btn-lg">Voir mes réalisations</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="container text-center">
+      <div class="badge mb-4">Services</div>
+      <h2 class="section-title">Ce que je fais</h2>
+      <p class="section-subtitle">Des solutions numériques complètes adaptées à vos besoins</p>
+
+      <div class="grid-4">
+        <div class="card group">
+          <div class="card-icon glow-pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+            </svg>
+          </div>
+          <h3>Design UI/UX</h3>
+          <p>Création d'interfaces intuitives et visuellement époustouflantes qui captivent vos utilisateurs.</p>
+          <a href="#uiux" class="btn-link">En savoir plus <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" class="ml-1">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="card group">
+          <div class="card-icon glow-pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+            </svg>
+          </div>
+          <h3>Développement Front-End</h3>
+          <p>Applications web performantes avec React, Next.js et les technologies modernes.</p>
+          <a href="#frontend" class="btn-link">En savoir plus <svg width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" class="ml-1">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="card group">
+          <div class="card-icon glow-pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+          </div>
+          <h3>WordPress</h3>
+          <p>Solutions WordPress personnalisées qui évoluent avec votre entreprise.</p>
+          <a href="#wordpress" class="btn-link">En savoir plus <svg width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" class="ml-1">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></a>
+        </div>
+
+        <div class="card group">
+          <div class="card-icon glow-pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18" />
+              <path d="M18 17V9" />
+              <path d="M13 17V5" />
+              <path d="M8 17v-3" />
+            </svg>
+          </div>
+          <h3>Data Analyst</h3>
+          <p>Analyse de données, création de pipelines ETL (Talend, Python) et conception de tableaux de bord
+            interactifs (Power BI).</p>
+          <a href="services.html#data" class="btn-link">En savoir plus
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="ml-1">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <a href="services.html" class="btn btn-primary glow-pink btn-lg inline-flex">
+          Voir tous les services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section container">
+    <div class="text-center mb-12">
+      <div class="badge mb-4">Portfolio</div>
+      <h2 class="section-title">Mes Réalisations</h2>
+      <p class="section-subtitle">Un aperçu de mes derniers projets en Design, Web et Data.</p>
+    </div>
+
+    <div id="portfolio-grid-home" class="grid-3"></div>
+
+    <div class="text-center mt-12">
+      <a href="portfolio.html" class="btn btn-primary glow-pink btn-lg inline-flex">
+        Voir tous les projets
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta-section container" style="margin-bottom: 4rem;">
+    <div class="card cta-image-match">
+      <h2>Prête à donner vie à votre projet ?</h2>
+      <p>Discutons de votre vision et créons ensemble quelque chose d'extraordinaire.</p>
+      <div class="cta-buttons-center">
+        <a href="mailto:noudoukouflora24@gmail.com" class="btn btn-white-pink btn-lg">
+          Contactez-moi
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <a href="portfolio.html" class="btn btn-outline-dark btn-lg">Voir mon portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer border-t">
+    <div class="container flex-between align-center mobile-col">
+      <div class="footer-info">
+        <h3>Flora NOUDOUKOU</h3>
+        <p>Designer UI/UX & Développeuse Front-End</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom border-t text-center">
+      <p>© 2025 Flora NOUDOUKOU. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

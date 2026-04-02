@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Flora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Flora</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav-links desktop-only">
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html" style="color: #f472b6;">À propos</a>
+                <a href="contact.html" class="btn btn-primary glow-pink btn-sm" style="color: white;">Contact</a>
+            </div>
+            <button class="theme-toggle-btn ml-2" aria-label="Changer le thème"
+                style="background: none; border: none; cursor: pointer; color: var(--text-color); display: flex; align-items: center; justify-content: center; padding: 0.5rem;">
+                <svg class="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+                <svg class="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" style="display: none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="container relative-container" style="padding-top: 8rem; padding-bottom: 5rem;">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+
+        <div class="about-hero-grid z-10 relative">
+            <div>
+                <div class="badge mb-6">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        class="mr-1">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg>
+                    À propos de moi
+                </div>
+                <h1 class="hero-title" style="font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 1.5rem;">
+                    Bonjour, je suis <span class="text-gradient">Flora</span>
+                </h1>
+                <p class="text-muted" style="font-size: 1.25rem; margin-bottom: 1.5rem; color: #e4e4e7;">
+                    Designer UI/UX, Développeuse & Data Analyst.
+                </p>
+                <p class="text-muted mb-6" style="font-size: 1.1rem; line-height: 1.8;">
+                    Basée à Toulouse et étudiante en Systèmes d'Information, j'aborde le numérique sous toutes
+                    ses coutures. Je ne me contente pas de rendre les interfaces belles : je les développe avec des
+                    technologies modernes et j'utilise l'analyse de données pour guider les décisions. De la conception
+                    créative à l'architecture technique, je crée des
+                    solutions digitales qui transforment la complexité en simplicité.
+                </p>
+
+                <a href="contact.html" class="btn btn-primary glow-pink btn-lg mt-4">
+                    Travaillons ensemble
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="card bg-gradient-dark" style="padding: 3rem;">
+                <div class="mb-12">
+                    <div class="flex-align-center mb-6">
+                        <div class="icon-box-pink">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-left: 1rem;">Formation</h3>
+                    </div>
+                    <div style="margin-left: 4rem;">
+                        <h4 style="color: #f9a8d4; font-size: 1.1rem; margin-bottom: 0.25rem;">EPSI Toulouse</h4>
+                        <p style="color: #a3a3a3; font-size: 0.9rem; margin-bottom: 0.5rem;">Master en Systèmes
+                            d'information 2025 - en cours</p>
+                        <p style="color: #71717a; font-size: 0.85rem;">Data, développement et devOps</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex-align-center mb-6">
+                        <div class="icon-box-pink">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-left: 1rem;">Expérience</h3>
+                    </div>
+                    <div style="margin-left: 4rem;">
+                        <h4 style="color: #f9a8d4; font-size: 1.1rem; margin-bottom: 0.25rem;">Bostonsolux</h4>
+                        <p style="color: #a3a3a3; font-size: 0.9rem; margin-bottom: 0.5rem;">Stagiaire Projet • Mars
+                            2025 - Présent</p>
+                        <p style="color: #71717a; font-size: 0.85rem;">Développement de projets web, communication
+                            digitale et design d'interfaces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding-bottom: 5rem;">
+        <div class="text-center mb-12">
+            <div class="badge mb-4">Compétences</div>
+            <h2 class="section-title">Ce que je maîtrise</h2>
+            <p class="section-subtitle">Un ensemble de compétences techniques et créatives pour donner vie à vos projets
+            </p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card bg-gradient-dark" style="padding: 2rem;">
+                <div class="flex-align-center" style="margin-bottom: 2rem;">
+                    <div class="card-icon glow-pink" style="margin-bottom: 0; width: 3rem; height: 3rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                            <path
+                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-left: 1rem; margin-bottom: 0;">Design</h3>
+                </div>
+                <div class="skills-tags-container">
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe XD</span>
+                    <span class="skill-tag">Canva</span>
+                    <span class="skill-tag">Prototypage / Maquettage</span>
+                </div>
+            </div>
+
+            <div class="card bg-gradient-dark" style="padding: 2rem;">
+                <div class="flex-align-center" style="margin-bottom: 2rem;">
+                    <div class="card-icon glow-pink" style="margin-bottom: 0; width: 3rem; height: 3rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-left: 1rem; margin-bottom: 0;">Développement</h3>
+                </div>
+                <div class="skills-tags-container">
+                    <span class="skill-tag">React / Next.js / Node JS / Express JS</span>
+                    <span class="skill-tag">C / Java / PHP</span>
+                    <span class="skill-tag">JavaScript / TypeScript</span>
+                    <span class="skill-tag">HTML & CSS</span>
+                    <span class="skill-tag">WordPress</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="card bg-gradient-dark" style="padding: 2rem;">
+                <div class="flex-align-center" style="margin-bottom: 2rem;">
+                    <div class="card-icon glow-pink" style="margin-bottom: 0; width: 3rem; height: 3rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-left: 1rem; margin-bottom: 0;">IA & Réseaux</h3>
+                </div>
+                <div class="skills-tags-container">
+                    <span class="skill-tag">ChatGPT / Claude / Gemini</span>
+                    <span class="skill-tag">Figma Make</span>
+                    <span class="skill-tag">Stitch</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">Community Management/ Gestion de projet</span>
+                    <span class="skill-tag">LinkedIn / Instagram</span>
+                </div>
+            </div>
+
+            <div class="card bg-gradient-dark" style="padding: 2rem;">
+                <div class="flex-align-center" style="margin-bottom: 2rem;">
+                    <div class="card-icon glow-pink" style="margin-bottom: 0; width: 3rem; height: 3rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M3 3v18h18" />
+                            <path d="M18 17V9" />
+                            <path d="M13 17V5" />
+                            <path d="M8 17v-3" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-left: 1rem; margin-bottom: 0;">Data</h3>
+                </div>
+                <div class="skills-tags-container">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Talend (ETL)</span>
+                    <span class="skill-tag">Orange / Dataiku / Machine Learning</span>
+                    <span class="skill-tag">Mongo DB</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL / BDD</span>
+                    <span class="skill-tag">Excel Avancé</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding-bottom: 5rem;">
+        <div class="text-center mb-12">
+            <div class="badge mb-4">Mes Valeurs</div>
+            <h2 class="section-title">Ce qui me guide</h2>
+            <p class="section-subtitle">Les principes qui définissent ma façon de travailler</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 2rem;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0; margin-top: 0.5rem;">Passion</h3>
+                    <div class="card-icon glow-pink" style="margin: 0; width: 3rem; height: 3rem; flex-shrink: 0;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-muted" style="margin-bottom: 0;">Je mets tout mon cœur dans chaque projet. Le design et
+                    le développement ne sont pas qu'un travail, c'est ma passion.</p>
+            </div>
+
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 2rem;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0; margin-top: 0.5rem;">Excellence</h3>
+                    <div class="card-icon glow-pink" style="margin: 0; width: 3rem; height: 3rem; flex-shrink: 0;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path
+                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-muted" style="margin-bottom: 0;">Je vise toujours la perfection dans chaque détail, du
+                    design au code, pour livrer des produits de qualité supérieure.</p>
+            </div>
+
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 2rem;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0; margin-top: 0.5rem;">Innovation</h3>
+                    <div class="card-icon glow-pink" style="margin: 0; width: 3rem; height: 3rem; flex-shrink: 0;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="8" r="7" />
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-muted" style="margin-bottom: 0;">Je reste à jour avec les dernières tendances et
+                    technologies pour offrir des solutions modernes et innovantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding-bottom: 5rem;">
+        <div class="text-center mb-12">
+            <div class="badge mb-4">En dehors du travail</div>
+            <h2 class="section-title">Mes passions</h2>
+            <p class="section-subtitle">Ce qui m'inspire et me ressource au quotidien</p>
+        </div>
+
+        <div class="grid-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 1.5rem; aspect-ratio: auto;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 0; margin-top: 0.2rem;">Café & Design</h4>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"
+                        style="flex-shrink: 0; margin-left: 0.5rem;">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                        <line x1="6" y1="1" x2="6" y2="4" />
+                        <line x1="10" y1="1" x2="10" y2="4" />
+                        <line x1="14" y1="1" x2="14" y2="4" />
+                    </svg>
+                </div>
+                <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Mes meilleures idées naissent autour
+                    d'un bon café</p>
+            </div>
+
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 1.5rem; aspect-ratio: auto;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 0; margin-top: 0.2rem;">Musique</h4>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"
+                        style="flex-shrink: 0; margin-left: 0.5rem;">
+                        <path d="M9 18V5l12-2v13" />
+                        <circle cx="6" cy="18" r="3" />
+                        <circle cx="18" cy="16" r="3" />
+                    </svg>
+                </div>
+                <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">La musique accompagne toutes mes
+                    sessions de création</p>
+            </div>
+
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 1.5rem; aspect-ratio: auto;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 0; margin-top: 0.2rem;">Apprentissage</h4>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"
+                        style="flex-shrink: 0; margin-left: 0.5rem;">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                </div>
+                <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Toujours en train d'apprendre de
+                    nouvelles technologies</p>
+            </div>
+
+            <div class="card bg-gradient-dark" style="text-align: left; padding: 1.5rem; aspect-ratio: auto;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 0; margin-top: 0.2rem;">Art & Créativité</h4>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"
+                        style="flex-shrink: 0; margin-left: 0.5rem;">
+                        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                        <path
+                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                    </svg>
+                </div>
+                <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Exploration de différentes formes
+                    d'expression artistique</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section container" style="margin-bottom: 4rem;">
+        <div class="card cta-image-match">
+            <h2>Créons quelque chose d'incroyable ensemble</h2>
+            <p>Si vous cherchez quelqu'un de passionné, créatif et dévoué pour votre prochain projet, parlons-en !</p>
+            <div class="cta-buttons-center">
+                <a href="contact.html" class="btn btn-white-pink btn-lg">
+                    Contactez-moi
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="portfolio.html" class="btn btn-outline-dark btn-lg">Voir mon travail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer border-t">
+        <div class="container flex-between align-center mobile-col">
+            <div class="footer-info">
+                <h3>Flora NOUDOUKOU</h3>
+                <p>Designer UI/UX & Développeuse Front-End</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
