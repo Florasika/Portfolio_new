@@ -77,9 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
             shortDesc: "Application web et mobile de cinéma avec sélection de siège, paiement mobile et gestion côté administrateur.",
             coverImage: "images/Rectangle 64.png",
             details: {
-                goal: "Décris ici le but du projet en une phrase.",
-                colors: ["#CodeHexa1", "#CodeHexa2"],
-                typography: "Le nom de la police utilisée"
+                goal: "Une application web et mobile de cinéma qui permet aux utilisateurs de voir les films et évènements qui sortent, de sélectionner leurs sièges, de payer et d'avoir leur ticket",
+                colors: ["#071348", "#E61E26", "#ffffff", "#000000", "#F8C049"],
+                typography: "Poppins, Roboto Serif, Georgia, Lalezar"
             }
         },
         { slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "/images/projects/cuisine-app/cover.jpg" },
