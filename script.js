@@ -76,7 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["Figma", "UI/UX", "Divertissement", "Web & Mobile App"],
             shortDesc: "Application web et mobile de cinéma avec sélection de siège, paiement mobile et gestion côté administrateur.",
             coverImage: "images/Rectangle 64.png",
-            fullDesc: "Une solution complète permettant aux utilisateurs de réserver leurs places en temps réel via une interface intuitive. Inclus : système de paiement sécurisé, QR codes pour les tickets et un tableau de bord administrateur pour la gestion des films et des salles."
+            details: {
+                goal: "Décris ici le but du projet en une phrase.",
+                colors: ["#CodeHexa1", "#CodeHexa2"],
+                typography: "Le nom de la police utilisée"
+            }
         },
         { slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "/images/projects/cuisine-app/cover.jpg" },
         { slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "/images/projects/colis-tracking-app/cover.jpg" },
