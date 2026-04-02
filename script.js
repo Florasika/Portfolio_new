@@ -67,7 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Arial, Inter, Georgia, Arvo"
             }
         },
-        { slug: "moov-togo-platform", title: "Plateforme Moov Togo", category: "figma", tags: ["Figma", "UI/UX", "Télécom", "Web App"], shortDesc: "Plateforme de restitution de crédit et gestion de forfaits pour Moov Togo.", coverImage: "/images/projects/moov-togo-platform/cover.jpg" },
+        { slug: "moov-togo-platform", title: "Plateforme Moov Togo", category: "figma", tags: ["Figma", "UI/UX", "Télécom", "Web App"], shortDesc: "Plateforme de restitution de crédit et gestion de forfaits pour Moov Togo.", coverImage: "images/332shots_so.png",
+            details: {
+                goal:"Une plateforme web pour la restitution de crédit et la gestion des forfaits de Moov Togo, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#EA6405", "#28B446", "#ffffff", "#000000", "#335E8D", "#518EF8", "#F14336"],
+                typography: "Poppins, Inter"
+            }
+         },
         { slug: "agri-tracking-app", title: "Application Agricole", category: "figma", tags: ["Figma", "UI/UX", "Agriculture", "Web App"], shortDesc: "Application web de suivi des cultures, plantations et ventes agricoles.", coverImage: "/images/projects/agri-tracking-app/cover.jpg" },
         { slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "/images/projects/stock-management-app/cover.jpg" },
         { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "/images/projects/miss-defitech-vote/cover.jpg" },
