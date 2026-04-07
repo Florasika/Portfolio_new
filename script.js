@@ -91,15 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "images/161shots_so.png",
             details: {
                 goal: "Une application web de vote en ligne pour l'élection de Miss DEFITECH en 2025, offrant une expérience utilisateur fluide et moderne pour les votants et les organisateurs.",
-                colors: ["#2563EB", "#8F8F8F", "#ffffff", "#000000", "#F14336"],
-                typography: "Segoe UI, Lato"
+                colors: ["#499205", "#DC0000", "#ffffff", "#000000", "#645900", "#EEC201"],
+                typography: "Montserrat, Georgia,Gelasio, Roboto Serif"
             }
          },
         { slug: "taxi-mobile-app", title: "Application Mobile TAXI", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile de taxi avec choix du véhicule, suivi du trajet et paiement mobile.", coverImage: "images/674shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de commander un taxi, de choisir le type de véhicule, de suivre le trajet en temps réel et de payer via mobile, offrant une expérience utilisateur fluide et moderne.",
-                colors: ["#499205", "#DC0000", "#ffffff", "#000000", "#645900", "#EEC201"],
-                typography: "Inter"
+                colors: ["#2563EB", "#8F8F8F", "#ffffff", "#000000", "#F14336"],
+                typography: "Segoe UI, Lato"
             }
          },
         { slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "/images/projects/dtn-event-app/cover.jpg" },
