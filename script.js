@@ -81,7 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Inter"
             }
         },
-        { slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "/images/projects/stock-management-app/cover.jpg" },
+        { slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "images/233shots_so.png",
+            details: {
+                goal: "Une application web de gestion de stock d'un mini-market qui permet de suivre les produits en stock, les ventes et les commandes, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#B82C99", "#C1B3B3", "#ffffff", "#000000", "#6C1158", "#F9E3F4", "#8A116F"],
+                typography: "Kaisei Decol"
+            }
+         },
         { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "/images/projects/miss-defitech-vote/cover.jpg" },
         { slug: "taxi-mobile-app", title: "Application Mobile TAXI", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile de taxi avec choix du véhicule, suivi du trajet et paiement mobile.", coverImage: "/images/projects/taxi-mobile-app/cover.jpg" },
         { slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "/images/projects/dtn-event-app/cover.jpg" },
