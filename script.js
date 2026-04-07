@@ -88,7 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Kaisei Decol"
             }
          },
-        { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "/images/projects/miss-defitech-vote/cover.jpg" },
+        { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "images/161shots_so.png",
+            details: {
+                goal: "Une application web de vote en ligne pour l'élection de Miss DEFITECH en 2025, offrant une expérience utilisateur fluide et moderne pour les votants et les organisateurs.",
+                colors: ["#B57E24", "#77420C", "#ffffff", "#000000", "#3A1004"],
+                typography: "Montserrat, Gelasio, Georgia, Roboto Serif"
+            }
+         },
         { slug: "taxi-mobile-app", title: "Application Mobile TAXI", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile de taxi avec choix du véhicule, suivi du trajet et paiement mobile.", coverImage: "/images/projects/taxi-mobile-app/cover.jpg" },
         { slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "/images/projects/dtn-event-app/cover.jpg" },
         { slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "/images/projects/projet-secours-app/cover.jpg" },
