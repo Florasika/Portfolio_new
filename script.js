@@ -218,34 +218,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 plugins: ["Elementor", "Polylang", "Contact Form 7"]
             }
         },
-        { slug: "wordpress-cuisine", title: "Site de Recettes de Cuisine", category: "wordpress", tags: ["WordPress", "Cuisine", "Blog"], shortDesc: "Site blog de recettes de cuisine avec catégories, recherche et partage social.", coverImage: "images/cook.png",
-             details: {
+        {
+            slug: "wordpress-cuisine", title: "Site de Recettes de Cuisine", category: "wordpress", tags: ["WordPress", "Cuisine", "Blog"], shortDesc: "Site blog de recettes de cuisine avec catégories, recherche et partage social.", coverImage: "images/cook.png",
+            details: {
                 goal: "Un site web qui présente différents variétés de cuisines (cake, patisserie, cuisine africaine, etc.) avec des recettes détaillées, une fonctionnalité de recherche et de partage sur les réseaux sociaux, offrant une expérience utilisateur fluide et moderne.",
                 theme: "Blocksy",
                 plugins: ["Elementor", "Kadence Blocks", "UAE"]
             }
-         },
-        { slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "images/learning.png",
-             details: {
+        },
+        {
+            slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "images/learning.png",
+            details: {
                 goal: "Un site web complet pour une plateforme e-learning qui propose des cours en ligne, des quiz interactifs et des certificats de completion pour les apprenants, offrant une expérience utilisateur fluide et moderne.",
                 theme: "University Institute",
                 plugins: ["Elementor", "LearnPress", "WPForm Lite"]
             }
-         },
-        { slug: "wordpress-hotel", title: "Site Web d'Hôtel", category: "wordpress", tags: ["WordPress", "Hôtellerie", "WooCommerce", "Réservation"], shortDesc: "Site hôtel avec système de réservation en ligne, galerie des chambres et WooCommerce.", coverImage: "images/hotel.png",
-             details: {
+        },
+        {
+            slug: "wordpress-hotel", title: "Site Web d'Hôtel", category: "wordpress", tags: ["WordPress", "Hôtellerie", "WooCommerce", "Réservation"], shortDesc: "Site hôtel avec système de réservation en ligne, galerie des chambres et WooCommerce.", coverImage: "images/hotel.png",
+            details: {
                 goal: "Un site web complet pour un hôtel qui présente les différentes chambres disponibles, une galerie de photos, un système de réservation en ligne et une boutique WooCommerce pour les services additionnels, offrant une expérience utilisateur fluide et moderne.",
                 theme: "Blocksy",
                 plugins: ["Elementor", "Woocommerce", "WPForm"]
             }
-         },
-        { slug: "wordpress-clinique", title: "Site Web de Clinique", category: "wordpress", tags: ["WordPress", "Santé", "Site Vitrine"], shortDesc: "Site web de clinique médicale avec présentation des spécialistes, services et prise de rendez-vous.", coverImage: "images/clinique.png",
-             details: {
+        },
+        {
+            slug: "wordpress-clinique", title: "Site Web de Clinique", category: "wordpress", tags: ["WordPress", "Santé", "Site Vitrine"], shortDesc: "Site web de clinique médicale avec présentation des spécialistes, services et prise de rendez-vous.", coverImage: "images/clinique.png",
+            details: {
                 goal: "Un site web complet pour une clinique médicale qui présente les différents spécialistes, les services proposés, une galerie de photos et un système de prise de rendez-vous en ligne, offrant une expérience utilisateur fluide et moderne.",
                 theme: "Legacy Medical Appointment",
                 plugins: ["Elementor", "Bookly", "WPForms Lite"]
             }
-         },
+        },
 
         // DATA ANALYSE
         { slug: "etl-talend", title: "Projet ETL avec Talend", category: "data", tags: ["Talend", "ETL", "Data Engineering"], shortDesc: "Conception et déploiement d'un pipeline ETL complet avec Talend Open Studio.", coverImage: "/images/projects/etl-talend/cover.jpg" },
@@ -255,7 +259,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { slug: "powerbi-qualite", title: "PowerBI – Qualité & Visualisation", category: "data", tags: ["PowerBI", "Data Visualization", "Reporting"], shortDesc: "Nettoyage, transformation et visualisation avancée des données avec PowerBI.", coverImage: "/images/projects/powerbi-qualite/cover.jpg" },
 
         // DÉVELOPPEMENT WEB
-        { slug: "exercices-javascript", title: "Projets JavaScript", category: "dev", tags: ["JavaScript", "DOM", "ES6+", "Frontend"], shortDesc: "Collection d'exercices et mini-projets en JavaScript : manipulation du DOM, APIs, ES6+.", coverImage: "/images/projects/exercices-javascript/cover.jpg" },
+        {
+            slug: "exercices-javascript", title: "Projets JavaScript", category: "dev", tags: ["JavaScript", "DOM", "ES6+", "Frontend"], shortDesc: "Collection d'exercices et mini-projets en JavaScript : manipulation du DOM, APIs, ES6+.", coverImage: "images/JS.png",
+            details: {
+                goal: "Pratiquer les concepts avancés du JavaScript moderne à travers des cas concrets.",
+                githubLink: "https://github.com/Florasika/JS_exo.git"
+            }
+        },
         { slug: "exercices-python", title: "Projets Python", category: "dev", tags: ["Python", "Backend", "Scripts"], shortDesc: "Exercices et scripts Python : algorithmique, traitement de fichiers, POO.", coverImage: "/images/projects/exercices-python/cover.jpg" },
         { slug: "exercices-html-css", title: "Projets HTML & CSS", category: "dev", tags: ["HTML", "CSS", "Responsive", "Frontend"], shortDesc: "Intégrations web en HTML/CSS avec designs responsives, animations et Flexbox/Grid.", coverImage: "/images/projects/exercices-html-css/cover.jpg" },
         { slug: "exercices-reactjs", title: "Projets React JS", category: "dev", tags: ["React", "JavaScript", "Frontend", "Hooks"], shortDesc: "Applications React avec hooks, gestion d'état, composants réutilisables et appels API.", coverImage: "/images/projects/exercices-reactjs/cover.jpg" },
@@ -277,11 +287,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const isWordPress = project.category === 'wordpress';
+        const isDev = project.category === 'dev';
         const modalBody = document.getElementById('modal-body');
 
-        // Bloc "Charte Graphique" (Figma) OU "Stack Technique" (WordPress)
-        const designBlock = isWordPress
-            ? `
+        let designBlock = '';
+
+        if (isWordPress) {
+            designBlock = `
             <h3 style="margin-bottom: 1rem; color: var(--primary);">Stack Technique</h3>
             <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
                 <p style="margin-bottom: 0.75rem;">
@@ -301,8 +313,50 @@ document.addEventListener('DOMContentLoaded', () => {
                         ">${plugin}</span>`
             ).join('')}
                 </div>
-            </div>`
-            : `
+            </div>`;
+
+        } else if (isDev) {
+            designBlock = `
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Code Source</h3>
+            <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
+                <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                    Le code source de ce projet est disponible sur GitHub.
+                </p>
+                <a href="${project.details.githubLink}" target="_blank" rel="noopener noreferrer"
+                    style="
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.6rem;
+                        background: linear-gradient(to right, #ec4899, #db2777);
+                        color: white;
+                        padding: 0.7rem 1.5rem;
+                        border-radius: 9999px;
+                        font-weight: 500;
+                        font-size: 0.95rem;
+                        text-decoration: none;
+                        transition: filter 0.3s ease;
+                    "
+                    onmouseover="this.style.filter='brightness(1.15)'"
+                    onmouseout="this.style.filter='brightness(1)'"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                            -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                            .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                            -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+                            c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                            0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+                            0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    Voir sur GitHub
+                </a>
+            </div>`;
+
+        } else {
+            // Figma (et autres catégories avec couleurs/typo)
+            designBlock = `
             <h3 style="margin-bottom: 1rem; color: var(--primary);">Charte Graphique</h3>
             <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
                 <p style="margin-bottom: 0.5rem;">Palette de couleurs :</p>
@@ -319,6 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <p>Typographie principale : <strong>${project.details.typography}</strong></p>
             </div>`;
+        }
 
         modalBody.innerHTML = `
         <h2 class="text-gradient mb-4" style="font-size: 2rem;">${project.title}</h2>
