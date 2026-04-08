@@ -278,69 +278,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const modal = document.getElementById('project-modal');
     const closeModal = document.querySelector('.close-modal');
-
     function openProjectDetails(slug) {
         const project = projects.find(p => p.slug === slug);
-        if (!project || !project.details) {
-            console.log("Détails non disponibles pour ce projet");
-            return;
-        }
+        if (!project || !project.details) return;
 
         const isWordPress = project.category === 'wordpress';
         const isDev = project.category === 'dev';
-        const modalBody = document.getElementById('modal-body');
 
         let designBlock = '';
 
         if (isWordPress) {
+            const pluginsHTML = project.details.plugins
+                .map(p => `<span class="modal-plugin-tag">${p}</span>`)
+                .join('');
             designBlock = `
-            <h3 style="margin-bottom: 1rem; color: var(--primary);">Stack Technique</h3>
-            <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
-                <p style="margin-bottom: 0.75rem;">
-                    Thème : <strong>${project.details.theme}</strong>
-                </p>
+            <h3 class="modal-section-title">Stack Technique</h3>
+            <div class="modal-design-block">
+                <p style="margin-bottom: 0.75rem;">Thème : <strong>${project.details.theme}</strong></p>
                 <p style="margin-bottom: 0.5rem;">Plugins :</p>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.25rem;">
-                    ${project.details.plugins.map(plugin =>
-                `<span style="
-                            background: rgba(236, 72, 153, 0.15);
-                            color: #f472b6;
-                            border: 1px solid rgba(236, 72, 153, 0.3);
-                            padding: 0.25rem 0.75rem;
-                            border-radius: 9999px;
-                            font-size: 0.85rem;
-                            font-weight: 500;
-                        ">${plugin}</span>`
-            ).join('')}
-                </div>
+                <div class="modal-plugins">${pluginsHTML}</div>
             </div>`;
 
         } else if (isDev) {
             designBlock = `
-            <h3 style="margin-bottom: 1rem; color: var(--primary);">Code Source</h3>
-            <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
+            <h3 class="modal-section-title">Code Source</h3>
+            <div class="modal-design-block">
                 <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
                     Le code source de ce projet est disponible sur GitHub.
                 </p>
                 <a href="${project.details.githubLink}" target="_blank" rel="noopener noreferrer"
-                    style="
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 0.6rem;
-                        background: linear-gradient(to right, #ec4899, #db2777);
-                        color: white;
-                        padding: 0.7rem 1.5rem;
-                        border-radius: 9999px;
-                        font-weight: 500;
-                        font-size: 0.95rem;
-                        text-decoration: none;
-                        transition: filter 0.3s ease;
-                    "
-                    onmouseover="this.style.filter='brightness(1.15)'"
-                    onmouseout="this.style.filter='brightness(1)'"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                        fill="currentColor">
+                    class="modal-github-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
                             0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
                             -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
@@ -355,38 +323,29 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
 
         } else {
-            // Figma (et autres catégories avec couleurs/typo)
+            const dotsHTML = project.details.colors
+                .map(c => `<span class="color-dot" style="background:${c};"></span>`)
+                .join('');
             designBlock = `
-            <h3 style="margin-bottom: 1rem; color: var(--primary);">Charte Graphique</h3>
-            <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
+            <h3 class="modal-section-title">Charte Graphique</h3>
+            <div class="modal-design-block">
                 <p style="margin-bottom: 0.5rem;">Palette de couleurs :</p>
-                <div class="color-dots" style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
-                    ${project.details.colors.map(c =>
-                `<span style="
-                            background: ${c};
-                            width: 30px; height: 30px;
-                            border-radius: 50%;
-                            border: 1px solid rgba(255,255,255,0.2);
-                            display: inline-block;
-                        "></span>`
-            ).join('')}
-                </div>
+                <div class="modal-color-dots">${dotsHTML}</div>
                 <p>Typographie principale : <strong>${project.details.typography}</strong></p>
             </div>`;
         }
 
-        modalBody.innerHTML = `
-        <h2 class="text-gradient mb-4" style="font-size: 2rem;">${project.title}</h2>
-        <div class="modal-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        document.getElementById('modal-body').innerHTML = `
+        <h2 class="text-gradient modal-title">${project.title}</h2>
+        <div class="modal-grid">
             <div class="modal-info">
-                <h3 style="margin-bottom: 1rem; color: var(--primary);">But du projet</h3>
-                <p class="text-muted" style="margin-bottom: 2rem;">${project.details.goal}</p>
+                <h3 class="modal-section-title">But du projet</h3>
+                <p class="modal-goal">${project.details.goal}</p>
                 ${designBlock}
             </div>
             <div class="modal-media">
-                <h3 style="margin-bottom: 1rem; color: var(--primary);">Aperçu</h3>
-                <img src="${project.coverImage}" alt="Maquette"
-                    style="width: 100%; border-radius: 1rem; border: 1px solid var(--border-color);">
+                <h3 class="modal-section-title">Aperçu</h3>
+                <img src="${project.coverImage}" alt="Maquette" class="modal-preview-img">
             </div>
         </div>
     `;
