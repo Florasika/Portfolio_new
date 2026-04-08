@@ -116,7 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Inter"
             }
          },
-        { slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "/images/projects/serigraphie-app/cover.jpg" },
+        { slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "images/757shots_so.png",
+            details: {
+                goal: "Une application mobile qui permet d'acheter des vêtements personnalisés avec paiement mobile et de suivre des cours de sérigraphie, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#CBB26A", "#D9D9D9", "#ffffff", "#000000", "#41A4F3"],
+                typography: "Inter, Roboto, Georgia"
+            }
+         },
         { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "/images/projects/sotral-togo-app/cover.jpg" },
         {
             slug: "cinema-app",
