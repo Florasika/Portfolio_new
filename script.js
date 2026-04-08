@@ -143,7 +143,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Poppins, Roboto Serif, Georgia, Lalezar"
             }
         },
-        { slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "/images/projects/cuisine-app/cover.jpg" },
+        { slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "images/301shots_so.png",
+            details: {
+                goal: "Une application mobile qui permet de voir des recettes de cuisine avec des vidéos, de suivre les étapes de préparation et d'ajouter ses propres recettes personnalisées, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#EA4799", "#DDDDDD", "#ffffff", "#000000", "#681239", "#E32180"],
+                typography: "Baloo2, Quicksand"
+            }
+        },
         { slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "/images/projects/colis-tracking-app/cover.jpg" },
         { slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "/images/projects/formation-digitale-platform/cover.jpg" },
         { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "/images/projects/supermarket-ecommerce/cover.jpg" },
