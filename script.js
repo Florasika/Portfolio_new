@@ -109,7 +109,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Georgia, Inter, Roboto Serif, Roboto"
             }
          },
-        { slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "/images/projects/projet-secours-app/cover.jpg" },
+        { slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "images/990shots_so.png",
+            details: {
+                goal: "Une application mobile qui permet de contacter les secours en cas d'urgence (médicale, police, panne, incendie, accident) avec géolocalisation, chat et gestion côté secouriste et administrateur web.",
+                colors: ["#1976D2", "#828282", "#ffffff", "#000000", "#BF0202", "#FF7900", "#00C22A"],
+                typography: "Inter"
+            }
+         },
         { slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "/images/projects/serigraphie-app/cover.jpg" },
         { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "/images/projects/sotral-togo-app/cover.jpg" },
         {
