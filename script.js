@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 plugins: ["Elementor", "Kadence Blocks", "UAE"]
             }
          },
-        { slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "learning.png",
+        { slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "images/learning.png",
              details: {
                 goal: "Un site web complet pour une plateforme e-learning qui propose des cours en ligne, des quiz interactifs et des certificats de completion pour les apprenants, offrant une expérience utilisateur fluide et moderne.",
                 theme: "University Institute",
@@ -239,11 +239,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 plugins: ["Elementor", "Woocommerce", "WPForm"]
             }
          },
-        { slug: "wordpress-clinique", title: "Site Web de Clinique", category: "wordpress", tags: ["WordPress", "Santé", "Site Vitrine"], shortDesc: "Site web de clinique médicale avec présentation des spécialistes, services et prise de rendez-vous.", coverImage: "/images/projects/wordpress-clinique/cover.jpg",
+        { slug: "wordpress-clinique", title: "Site Web de Clinique", category: "wordpress", tags: ["WordPress", "Santé", "Site Vitrine"], shortDesc: "Site web de clinique médicale avec présentation des spécialistes, services et prise de rendez-vous.", coverImage: "images/clinique.png",
              details: {
                 goal: "Un site web complet pour une clinique médicale qui présente les différents spécialistes, les services proposés, une galerie de photos et un système de prise de rendez-vous en ligne, offrant une expérience utilisateur fluide et moderne.",
-                theme: "Royal Elementor Kit",
-                plugins: ["Elementor", "Polylang", "Contact Form 7"]
+                theme: "Legacy Medical Appointment",
+                plugins: ["Elementor", "Bookly", "WPForms Lite"]
             }
          },
 
