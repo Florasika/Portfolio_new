@@ -67,69 +67,78 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Arial, Inter, Georgia, Arvo"
             }
         },
-        { slug: "moov-togo-platform", title: "Plateforme Moov Togo", category: "figma", tags: ["Figma", "UI/UX", "Télécom", "Web App"], shortDesc: "Plateforme de restitution de crédit et gestion de forfaits pour Moov Togo.", coverImage: "images/332shots_so.png",
+        {
+            slug: "moov-togo-platform", title: "Plateforme Moov Togo", category: "figma", tags: ["Figma", "UI/UX", "Télécom", "Web App"], shortDesc: "Plateforme de restitution de crédit et gestion de forfaits pour Moov Togo.", coverImage: "images/332shots_so.png",
             details: {
-                goal:"Une plateforme web pour la restitution de crédit et la gestion des forfaits de Moov Togo, offrant une expérience utilisateur fluide et moderne.",
+                goal: "Une plateforme web pour la restitution de crédit et la gestion des forfaits de Moov Togo, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#EA6405", "#28B446", "#ffffff", "#000000", "#335E8D", "#518EF8", "#F14336"],
                 typography: "Poppins, Inter"
             }
-         },
-        { slug: "agri-tracking-app", title: "Application Agricole", category: "figma", tags: ["Figma", "UI/UX", "Agriculture", "Web App"], shortDesc: "Application web de suivi des cultures, plantations et ventes agricoles.", coverImage: "images/647shots_so.png", 
+        },
+        {
+            slug: "agri-tracking-app", title: "Application Agricole", category: "figma", tags: ["Figma", "UI/UX", "Agriculture", "Web App"], shortDesc: "Application web de suivi des cultures, plantations et ventes agricoles.", coverImage: "images/647shots_so.png",
             details: {
                 goal: "Une application web de suivi des cultures, plantations et ventes agricoles, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#499205", "#DC0000", "#ffffff", "#000000", "#645900", "#EEC201"],
                 typography: "Inter"
             }
         },
-        { slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "images/233shots_so.png",
+        {
+            slug: "stock-management-app", title: "Application de Gestion de Stock", category: "figma", tags: ["Figma", "UI/UX", "Gestion", "Web App"], shortDesc: "Application web complète de gestion et suivi de stock en temps réel.", coverImage: "images/233shots_so.png",
             details: {
                 goal: "Une application web de gestion de stock d'un mini-market qui permet de suivre les produits en stock, les ventes et les commandes, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#B82C99", "#C1B3B3", "#ffffff", "#000000", "#6C1158", "#F9E3F4", "#8A116F"],
                 typography: "Kaisei Decol"
             }
-         },
-        { slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "images/161shots_so.png",
+        },
+        {
+            slug: "miss-defitech-vote", title: "Plateforme de Vote Miss DEFITECH", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Web App"], shortDesc: "Plateforme web de vote en ligne pour l'élection Miss DEFITECH.", coverImage: "images/161shots_so.png",
             details: {
                 goal: "Une application web de vote en ligne pour l'élection de Miss DEFITECH en 2025, offrant une expérience utilisateur fluide et moderne pour les votants et les organisateurs.",
                 colors: ["#499205", "#DC0000", "#ffffff", "#000000", "#645900", "#EEC201"],
                 typography: "Montserrat, Georgia,Gelasio, Roboto Serif"
             }
-         },
-        { slug: "taxi-mobile-app", title: "Application Mobile TAXI", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile de taxi avec choix du véhicule, suivi du trajet et paiement mobile.", coverImage: "images/674shots_so.png",
+        },
+        {
+            slug: "taxi-mobile-app", title: "Application Mobile TAXI", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile de taxi avec choix du véhicule, suivi du trajet et paiement mobile.", coverImage: "images/674shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de commander un taxi, de choisir le type de véhicule, de suivre le trajet en temps réel et de payer via mobile, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#2563EB", "#8F8F8F", "#ffffff", "#000000", "#F14336"],
                 typography: "Segoe UI, Lato"
             }
-         },
-        { slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "images/841shots_so.png",
+        },
+        {
+            slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "images/841shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de voir les évènements de mettre sur son agenda, de voir les détails de l'évènements et de consulter le profil de celui qui organise l'évènement.",
                 colors: ["#F0997A", "#BA68C8", "#ffffff", "#000000", "#263238", "#37474F"],
                 typography: "Georgia, Inter, Roboto Serif, Roboto"
             }
-         },
-        { slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "images/990shots_so.png",
+        },
+        {
+            slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "images/990shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de contacter les secours en cas d'urgence (médicale, police, panne, incendie, accident) avec géolocalisation, chat et gestion côté secouriste et administrateur web.",
                 colors: ["#1976D2", "#828282", "#ffffff", "#000000", "#BF0202", "#FF7900", "#00C22A"],
                 typography: "Inter"
             }
-         },
-        { slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "images/757shots_so.png",
+        },
+        {
+            slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "images/757shots_so.png",
             details: {
                 goal: "Une application mobile qui permet d'acheter des vêtements personnalisés avec paiement mobile et de suivre des cours de sérigraphie, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#CBB26A", "#D9D9D9", "#ffffff", "#000000", "#41A4F3"],
                 typography: "Inter, Roboto, Georgia"
             }
-         },
-        { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "images/689shots_so.png",
+        },
+        {
+            slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "images/689shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de voir l'heure du bus Sotral, de voir les stations aux alentours, d'obtenir son ticket et de suivre le trajet en temps réel, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#3EC3FF", "#D73028", "#ffffff", "#000000", "#7976FB", "#18A900"],
                 typography: "Inter,Poppins"
             }
-         },
+        },
         {
             slug: "cinema-app",
             title: "Application Cinéma",
@@ -143,58 +152,72 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Poppins, Roboto Serif, Georgia, Lalezar"
             }
         },
-        { slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "images/301shots_so.png",
+        {
+            slug: "cuisine-app", title: "Application Mobile de Cuisine", category: "figma", tags: ["Figma", "UI/UX", "Lifestyle", "Mobile App"], shortDesc: "Application mobile de recettes de cuisine avec vidéos et ajout de recettes personnalisées.", coverImage: "images/301shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de voir des recettes de cuisine avec des vidéos, de suivre les étapes de préparation et d'ajouter ses propres recettes personnalisées, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#EA4799", "#DDDDDD", "#ffffff", "#000000", "#681239", "#E32180"],
                 typography: "Baloo2, Quicksand"
             }
         },
-        { slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "images/345shots_so.png",
+        {
+            slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "images/345shots_so.png",
             details: {
                 goal: "Une application web qui permet de suivre les colis, de faire des demandes de livraison, de passer des commandes, d'avoir un chat pour communiquer avec le livreur et d'avoir une facturation claire, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#FC624D", "#99406C", "#ffffff", "#000000", "#18587A", "#543F3C", "#FCA7A7"],
                 typography: "Inter"
             }
-         },
-        { slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "images/126shots_so.png",
+        },
+        {
+            slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "images/126shots_so.png",
             details: {
                 goal: "Une application web qui permet de suivre des cours en ligne, de planifier ses sessions d'apprentissage, de rejoindre des communautés d'apprenants, d'obtenir des certifications et d'échanger avec les formateurs, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#FF3D00", "#4042E2", "#ffffff", "#000000", "#00FFAB", "#5F27CD"],
                 typography: "Poppins, Roboto"
             }
-         },
-        { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "images/920shots_so.png",
+        },
+        {
+            slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "images/920shots_so.png",
             details: {
                 goal: "Une application web qui permet de faire ses courses en ligne façon supermarché, avec un panier d'achat, un système de paiement sécurisé et une fonctionnalité de favoris pour les produits, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#E3D399", "#BBCB8C", "#ffffff", "#000000", "#C44862", "#47BC4C", "#F6A578"],
                 typography: "Inter, Roboto Serif, Inika, Poppins"
             }
-         },
-        { slug: "controle-routier-app", title: "Application Contrôle Routier", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web & Mobile App"], shortDesc: "Suivi du contrôle routier (assurance, permis, scan de plaque) avec gestion des agents côté admin.", coverImage: "images/551shots_so.png",
+        },
+        {
+            slug: "controle-routier-app", title: "Application Contrôle Routier", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web & Mobile App"], shortDesc: "Suivi du contrôle routier (assurance, permis, scan de plaque) avec gestion des agents côté admin.", coverImage: "images/551shots_so.png",
             details: {
                 goal: "Une application mobile qui permet de suivre le contrôle routier, de vérifier l'assurance et le permis de conduire, de scanner les plaques d'immatriculation et d'avoir une gestion des agents côté administrateur web, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#E09A2A", "#030778", "#ffffff", "#000000", "#2668C2", "#FFD084"],
                 typography: "Inter, Georama, Georgia, Roboto"
             }
-         },
-        { slug: "odoo-bostonsolux", title: "Application Mobile Odoo – BostonSolux", category: "figma", tags: ["Figma", "UI/UX", "ERP", "Mobile App"], shortDesc: "Application mobile Odoo personnalisée pour la gestion interne de BostonSolux.", coverImage: "images/474shots_so.png",
+        },
+        {
+            slug: "odoo-bostonsolux", title: "Application Mobile Odoo – BostonSolux", category: "figma", tags: ["Figma", "UI/UX", "ERP", "Mobile App"], shortDesc: "Application mobile Odoo personnalisée pour la gestion interne de BostonSolux.", coverImage: "images/474shots_so.png",
             details: {
                 goal: "Une application mobile Odoo personnalisée pour la gestion interne de BostonSolux, offrant une expérience utilisateur fluide et moderne pour les employés et les administrateurs.",
                 colors: ["#991B1F", "#5E5E5E", "#ffffff", "#000000", "#D9D9D9"],
                 typography: "Inter, Manrope"
             }
-         },
-        { slug: "bostonsolux-website", title: "Refonte Site BostonSolux Security", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web App"], shortDesc: "Refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle.", coverImage: "images/317shots_so.png",
+        },
+        {
+            slug: "bostonsolux-website", title: "Refonte Site BostonSolux Security", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web App"], shortDesc: "Refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle.", coverImage: "images/317shots_so.png",
             details: {
                 goal: "Une application web qui permet de refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#9C1D1E", "#053076", "#ffffff", "#000000", "#18587A", "#0076B2", "#1D9BF0"],
                 typography: "Roboto, Georgia"
             }
-         },
+        },
 
         // WORDPRESS
-        { slug: "wordpress-gym", title: "Site Web de Gym", category: "wordpress", tags: ["WordPress", "Fitness", "Site Vitrine"], shortDesc: "Site web complet pour une salle de sport avec planning des cours, abonnements et galerie.", coverImage: "/images/projects/wordpress-gym/cover.jpg" },
+        {
+            slug: "wordpress-gym", title: "Site Web de Gym", category: "wordpress", tags: ["WordPress", "Fitness", "Site Vitrine"], shortDesc: "Site web complet pour une salle de sport avec planning des cours, abonnements et galerie.", coverImage: "images/gym.png",
+            details: {
+                goal: "Un site web complet pour une salle de sport qui présente les différentes activités proposées, le planning des cours, les tarifs d'abonnement et une galerie de photos, offrant une expérience utilisateur fluide et moderne.",
+                theme: "Royal Elementor Kit",
+                plugins: ["Elementor", "Polylang", "Contact Form 7"]
+            }
+        },
         { slug: "wordpress-cuisine", title: "Site de Recettes de Cuisine", category: "wordpress", tags: ["WordPress", "Cuisine", "Blog"], shortDesc: "Site blog de recettes de cuisine avec catégories, recherche et partage social.", coverImage: "/images/projects/wordpress-cuisine/cover.jpg" },
         { slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "/images/projects/wordpress-elearning/cover.jpg" },
         { slug: "wordpress-hotel", title: "Site Web d'Hôtel", category: "wordpress", tags: ["WordPress", "Hôtellerie", "WooCommerce", "Réservation"], shortDesc: "Site hôtel avec système de réservation en ligne, galerie des chambres et WooCommerce.", coverImage: "/images/projects/wordpress-hotel/cover.jpg" },
