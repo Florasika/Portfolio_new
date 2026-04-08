@@ -150,7 +150,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Baloo2, Quicksand"
             }
         },
-        { slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "/images/projects/colis-tracking-app/cover.jpg" },
+        { slug: "colis-tracking-app", title: "Application de Suivi de Colis", category: "figma", tags: ["Figma", "UI/UX", "Logistique", "Web & Mobile App"], shortDesc: "Application web et mobile de suivi de colis avec demandes, commandes, chat et facturation.", coverImage: "images/345shots_so.png",
+            details: {
+                goal: "Une application web qui permet de suivre les colis, de faire des demandes de livraison, de passer des commandes, d'avoir un chat pour communiquer avec le livreur et d'avoir une facturation claire, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#FC624D", "#99406C", "#ffffff", "#000000", "#18587A", "#543F3C", "#FCA7A7"],
+                typography: "Inter"
+            }
+         },
         { slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "/images/projects/formation-digitale-platform/cover.jpg" },
         { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "/images/projects/supermarket-ecommerce/cover.jpg" },
         { slug: "controle-routier-app", title: "Application Contrôle Routier", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web & Mobile App"], shortDesc: "Suivi du contrôle routier (assurance, permis, scan de plaque) avec gestion des agents côté admin.", coverImage: "/images/projects/controle-routier-app/cover.jpg" },
