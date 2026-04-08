@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Poppins, Roboto"
             }
          },
-        { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "images/126shots_so.png",
+        { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "images/920shots_so.png",
             details: {
                 goal: "Une application web qui permet de faire ses courses en ligne façon supermarché, avec un panier d'achat, un système de paiement sécurisé et une fonctionnalité de favoris pour les produits, offrant une expérience utilisateur fluide et moderne.",
                 colors: ["#E3D399", "#BBCB8C", "#ffffff", "#000000", "#C44862", "#47BC4C", "#F6A578"],
