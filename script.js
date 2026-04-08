@@ -102,7 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Segoe UI, Lato"
             }
          },
-        { slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "/images/projects/dtn-event-app/cover.jpg" },
+        { slug: "dtn-event-app", title: "Application DTN – Gestion d'Événements", category: "figma", tags: ["Figma", "UI/UX", "Événementiel", "Mobile App"], shortDesc: "Application mobile de gestion des événements DTN (côté utilisateur et organisateur).", coverImage: "images/841shots_so.png",
+            details: {
+                goal: "Une application mobile qui permet de voir les évènements de mettre sur son agenda, de voir les détails de l'évènements et de consulter le profil de celui qui organise l'évènement.",
+                colors: ["#F0997A", "#BA68C8", "#ffffff", "#000000", "#263238", "#37474F"],
+                typography: "Georgia, Inter, Roboto Serif, Roboto"
+            }
+         },
         { slug: "projet-secours-app", title: "Projet Secours – Application d'Urgence", category: "figma", tags: ["Figma", "UI/UX", "Urgence", "Web & Mobile App"], shortDesc: "Application d'urgence (médicale, police, panne, incendie, accident) côté user, secouriste et admin web.", coverImage: "/images/projects/projet-secours-app/cover.jpg" },
         { slug: "serigraphie-app", title: "Application Sérigraphie", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Mobile App"], shortDesc: "Application mobile de vente de vêtements personnalisés avec paiement mobile et cours de sérigraphie.", coverImage: "/images/projects/serigraphie-app/cover.jpg" },
         { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "/images/projects/sotral-togo-app/cover.jpg" },
