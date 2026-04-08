@@ -266,8 +266,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 githubLink: "https://github.com/Florasika/JS_exo.git"
             }
         },
-        { slug: "exercices-python", title: "Projets Python", category: "dev", tags: ["Python", "Backend", "Scripts"], shortDesc: "Exercices et scripts Python : algorithmique, traitement de fichiers, POO.", coverImage: "/images/projects/exercices-python/cover.jpg" },
-        { slug: "exercices-html-css", title: "Projets HTML & CSS", category: "dev", tags: ["HTML", "CSS", "Responsive", "Frontend"], shortDesc: "Intégrations web en HTML/CSS avec designs responsives, animations et Flexbox/Grid.", coverImage: "/images/projects/exercices-html-css/cover.jpg" },
+        { slug: "exercices-python", title: "Projets Python", category: "dev", tags: ["Python", "Backend", "Scripts"], shortDesc: "Exercices et scripts Python : algorithmique, traitement de fichiers, POO.", coverImage: "images/py.png",
+            details: {
+                goal: "Pratiquer les concepts avancés du Python à travers des cas concrets.",
+                githubLink: "https://github.com/Florasika/Mini_exo_python.git"
+            }
+         },
         { slug: "exercices-reactjs", title: "Projets React JS", category: "dev", tags: ["React", "JavaScript", "Frontend", "Hooks"], shortDesc: "Applications React avec hooks, gestion d'état, composants réutilisables et appels API.", coverImage: "/images/projects/exercices-reactjs/cover.jpg" },
         { slug: "exercices-mongodb", title: "Projets MongoDB", category: "dev", tags: ["MongoDB", "NoSQL", "Node.js", "Backend"], shortDesc: "Exercices MongoDB : modélisation de données, requêtes CRUD, agrégation et index.", coverImage: "/images/projects/exercices-mongodb/cover.jpg" },
         { slug: "exercices-sql", title: "Projets SQL", category: "dev", tags: ["SQL", "MySQL", "PostgreSQL", "Base de données"], shortDesc: "Exercices SQL : modélisation relationnelle, requêtes complexes, jointures et procédures stockées.", coverImage: "/images/projects/exercices-sql/cover.jpg" }
