@@ -218,21 +218,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 plugins: ["Elementor", "Polylang", "Contact Form 7"]
             }
         },
-        { slug: "wordpress-cuisine", title: "Site de Recettes de Cuisine", category: "wordpress", tags: ["WordPress", "Cuisine", "Blog"], shortDesc: "Site blog de recettes de cuisine avec catégories, recherche et partage social.", coverImage: "/images/projects/wordpress-cuisine/cover.jpg" },
-        { slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "/images/projects/wordpress-elearning/cover.jpg" },
-        { slug: "wordpress-hotel", title: "Site Web d'Hôtel", category: "wordpress", tags: ["WordPress", "Hôtellerie", "WooCommerce", "Réservation"], shortDesc: "Site hôtel avec système de réservation en ligne, galerie des chambres et WooCommerce.", coverImage: "/images/projects/wordpress-hotel/cover.jpg" },
-        { slug: "wordpress-clinique", title: "Site Web de Clinique", category: "wordpress", tags: ["WordPress", "Santé", "Site Vitrine"], shortDesc: "Site web de clinique médicale avec présentation des spécialistes, services et prise de rendez-vous.", coverImage: "/images/projects/wordpress-clinique/cover.jpg" },
+        { slug: "wordpress-cuisine", title: "Site de Recettes de Cuisine", category: "wordpress", tags: ["WordPress", "Cuisine", "Blog"], shortDesc: "Site blog de recettes de cuisine avec catégories, recherche et partage social.", coverImage: "images/cook.png",
+             details: {
+                goal: "Un site web qui présente différents variétés de cuisines (cake, patisserie, cuisine africaine, etc.) avec des recettes détaillées, une fonctionnalité de recherche et de partage sur les réseaux sociaux, offrant une expérience utilisateur fluide et moderne.",
+                theme: "Blocksy",
+                plugins: ["Elementor", "Kadence Blocks", "UAE"]
+            }
+         },
+        { slug: "wordpress-elearning", title: "Site E-learning", category: "wordpress", tags: ["WordPress", "E-learning", "Formation"], shortDesc: "Plateforme e-learning avec cours en ligne, quiz et certificats de completion.", coverImage: "learning.png",
+             details: {
+                goal: "Un site web complet pour une plateforme e-learning qui propose des cours en ligne, des quiz interactifs et des certificats de completion pour les apprenants, offrant une expérience utilisateur fluide et moderne.",
+                theme: "University Institute",
+                plugins: ["Elementor", "LearnPress", "WPForm Lite"]
+            }
+         },
+        { slug: "wordpress-hotel", title: "Site Web d'Hôtel", category: "wordpress", tags: ["WordPress", "Hôtellerie", "WooCommerce", "Réservation"], shortDesc: "Site hôtel avec système de réservation en ligne, galerie des chambres et WooCommerce.", coverImage: "images/hotel.png",
+             details: {
+                goal: "Un site web complet pour un hôtel qui présente les différentes chambres disponibles, une galerie de photos, un système de réservation en ligne et une boutique WooCommerce pour les services additionnels, offrant une expérience utilisateur fluide et moderne.",
+                theme: "Blocksy",
+                plugins: ["Elementor", "Woocommerce", "WPForm"]
+            }
+         },
+        { slug: "wordpress-clinique", title: "Site Web de Clinique", category: "wordpress", tags: ["WordPress", "Santé", "Site Vitrine"], shortDesc: "Site web de clinique médicale avec présentation des spécialistes, services et prise de rendez-vous.", coverImage: "/images/projects/wordpress-clinique/cover.jpg",
+             details: {
+                goal: "Un site web complet pour une clinique médicale qui présente les différents spécialistes, les services proposés, une galerie de photos et un système de prise de rendez-vous en ligne, offrant une expérience utilisateur fluide et moderne.",
+                theme: "Royal Elementor Kit",
+                plugins: ["Elementor", "Polylang", "Contact Form 7"]
+            }
+         },
 
         // DATA ANALYSE
         { slug: "etl-talend", title: "Projet ETL avec Talend", category: "data", tags: ["Talend", "ETL", "Data Engineering"], shortDesc: "Conception et déploiement d'un pipeline ETL complet avec Talend Open Studio.", coverImage: "/images/projects/etl-talend/cover.jpg" },
         { slug: "fouille-donnees-titanic", title: "Fouille de Données – Dataset Titanic", category: "data", tags: ["Python", "Machine Learning", "Data Science"], shortDesc: "Analyse prédictive sur le dataset Titanic : régression, KNN, Random Forest et matrice de confusion.", coverImage: "/images/projects/fouille-donnees-titanic/cover.jpg" },
         { slug: "datavisualisation-orange", title: "Datavisualisation avec Orange", category: "data", tags: ["Orange", "Visualisation", "Data Mining"], shortDesc: "Analyse et visualisation de données avec l'outil Orange Data Mining.", coverImage: "/images/projects/datavisualisation-orange/cover.jpg" },
-        { slug: "qualite-donnees-python", title: "Qualité de Données avec Python", category: "data", tags: ["Python", "Data Quality", "Pandas"], shortDesc: "Analyse et amélioration de la qualité des données avec Python : nettoyage, détection d'anomalies et normalisation.", coverImage: "/images/projects/qualite-donnees-python/cover.jpg" },
         { slug: "entrepot-donnees-powerbi", title: "Entrepôt de Données & PowerBI", category: "data", tags: ["ETL", "PowerBI", "Data Warehouse"], shortDesc: "Conception d'un entrepôt de données avec pipeline ETL et tableaux de bord PowerBI.", coverImage: "/images/projects/entrepot-donnees-powerbi/cover.jpg" },
         { slug: "powerbi-qualite", title: "PowerBI – Qualité & Visualisation", category: "data", tags: ["PowerBI", "Data Visualization", "Reporting"], shortDesc: "Nettoyage, transformation et visualisation avancée des données avec PowerBI.", coverImage: "/images/projects/powerbi-qualite/cover.jpg" },
-        { slug: "deploiement-vm-ubuntu", title: "Déploiement Web sur VM Ubuntu", category: "data", tags: ["Linux", "PHP", "HTML", "DevOps"], shortDesc: "Déploiement d'une page HTML/PHP sur une machine virtuelle Ubuntu avec configuration serveur.", coverImage: "/images/projects/deploiement-vm-ubuntu/cover.jpg" },
-        { slug: "datascience-dataiku", title: "Data Science & ML avec Dataiku", category: "data", tags: ["Dataiku", "Machine Learning", "Data Science"], shortDesc: "Projet de data science et machine learning avec la plateforme Dataiku DSS.", coverImage: "/images/projects/datascience-dataiku/cover.jpg" },
-        { slug: "security-by-design", title: "Sécurité by Design", category: "data", tags: ["Cybersécurité", "STRIPE", "SOP", "CORS"], shortDesc: "Étude et application des principes de sécurité by design : STRIPE, SOP, CORS.", coverImage: "/images/projects/security-by-design/cover.jpg" },
 
         // DÉVELOPPEMENT WEB
         { slug: "exercices-javascript", title: "Projets JavaScript", category: "dev", tags: ["JavaScript", "DOM", "ES6+", "Frontend"], shortDesc: "Collection d'exercices et mini-projets en JavaScript : manipulation du DOM, APIs, ES6+.", coverImage: "/images/projects/exercices-javascript/cover.jpg" },
