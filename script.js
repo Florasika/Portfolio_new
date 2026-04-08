@@ -123,7 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Inter, Roboto, Georgia"
             }
          },
-        { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "/images/projects/sotral-togo-app/cover.jpg" },
+        { slug: "sotral-togo-app", title: "Application Sotral Togo", category: "figma", tags: ["Figma", "UI/UX", "Transport", "Mobile App"], shortDesc: "Application mobile pour voir l'heure du bus Sotral, suivre le trajet et donner une note.", coverImage: "images/689shots_so.png",
+            details: {
+                goal: "Une application mobile qui permet de voir l'heure du bus Sotral, de voir les stations aux alentours, d'obtenir son ticket et de suivre le trajet en temps réel, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#3EC3FF", "#D73028", "#ffffff", "#000000", "#7976FB", "#18A900"],
+                typography: "Inter,Poppins"
+            }
+         },
         {
             slug: "cinema-app",
             title: "Application Cinéma",
