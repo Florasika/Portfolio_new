@@ -171,9 +171,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Inter, Roboto Serif, Inika, Poppins"
             }
          },
-        { slug: "controle-routier-app", title: "Application Contrôle Routier", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web & Mobile App"], shortDesc: "Suivi du contrôle routier (assurance, permis, scan de plaque) avec gestion des agents côté admin.", coverImage: "/images/projects/controle-routier-app/cover.jpg" },
-        { slug: "odoo-bostonsolux", title: "Application Mobile Odoo – BostonSolux", category: "figma", tags: ["Figma", "UI/UX", "ERP", "Mobile App"], shortDesc: "Application mobile Odoo personnalisée pour la gestion interne de BostonSolux.", coverImage: "/images/projects/odoo-bostonsolux/cover.jpg" },
-        { slug: "bostonsolux-website", title: "Refonte Site BostonSolux Security", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web App"], shortDesc: "Refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle.", coverImage: "/images/projects/bostonsolux-website/cover.jpg" },
+        { slug: "controle-routier-app", title: "Application Contrôle Routier", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web & Mobile App"], shortDesc: "Suivi du contrôle routier (assurance, permis, scan de plaque) avec gestion des agents côté admin.", coverImage: "images/551shots_so.png",
+            details: {
+                goal: "Une application mobile qui permet de suivre le contrôle routier, de vérifier l'assurance et le permis de conduire, de scanner les plaques d'immatriculation et d'avoir une gestion des agents côté administrateur web, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#E09A2A", "#030778", "#ffffff", "#000000", "#2668C2", "#FFD084"],
+                typography: "Inter, Georama, Georgia, Roboto"
+            }
+         },
+        { slug: "odoo-bostonsolux", title: "Application Mobile Odoo – BostonSolux", category: "figma", tags: ["Figma", "UI/UX", "ERP", "Mobile App"], shortDesc: "Application mobile Odoo personnalisée pour la gestion interne de BostonSolux.", coverImage: "images/474shots_so.png",
+            details: {
+                goal: "Une application mobile Odoo personnalisée pour la gestion interne de BostonSolux, offrant une expérience utilisateur fluide et moderne pour les employés et les administrateurs.",
+                colors: ["#991B1F", "#5E5E5E", "#ffffff", "#000000", "#D9D9D9"],
+                typography: "Inter, Manrope"
+            }
+         },
+        { slug: "bostonsolux-website", title: "Refonte Site BostonSolux Security", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web App"], shortDesc: "Refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle.", coverImage: "images/317shots_so.png",
+            details: {
+                goal: "Une application web qui permet de refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#9C1D1E", "#053076", "#ffffff", "#000000", "#18587A", "#0076B2", "#1D9BF0"],
+                typography: "Roboto, Georgia"
+            }
+         },
 
         // WORDPRESS
         { slug: "wordpress-gym", title: "Site Web de Gym", category: "wordpress", tags: ["WordPress", "Fitness", "Site Vitrine"], shortDesc: "Site web complet pour une salle de sport avec planning des cours, abonnements et galerie.", coverImage: "/images/projects/wordpress-gym/cover.jpg" },
