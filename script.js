@@ -256,30 +256,65 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        const isWordPress = project.category === 'wordpress';
         const modalBody = document.getElementById('modal-body');
+
+        // Bloc "Charte Graphique" (Figma) OU "Stack Technique" (WordPress)
+        const designBlock = isWordPress
+            ? `
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Stack Technique</h3>
+            <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
+                <p style="margin-bottom: 0.75rem;">
+                    Thème : <strong>${project.details.theme}</strong>
+                </p>
+                <p style="margin-bottom: 0.5rem;">Plugins :</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.25rem;">
+                    ${project.details.plugins.map(plugin =>
+                `<span style="
+                            background: rgba(236, 72, 153, 0.15);
+                            color: #f472b6;
+                            border: 1px solid rgba(236, 72, 153, 0.3);
+                            padding: 0.25rem 0.75rem;
+                            border-radius: 9999px;
+                            font-size: 0.85rem;
+                            font-weight: 500;
+                        ">${plugin}</span>`
+            ).join('')}
+                </div>
+            </div>`
+            : `
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Charte Graphique</h3>
+            <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
+                <p style="margin-bottom: 0.5rem;">Palette de couleurs :</p>
+                <div class="color-dots" style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
+                    ${project.details.colors.map(c =>
+                `<span style="
+                            background: ${c};
+                            width: 30px; height: 30px;
+                            border-radius: 50%;
+                            border: 1px solid rgba(255,255,255,0.2);
+                            display: inline-block;
+                        "></span>`
+            ).join('')}
+                </div>
+                <p>Typographie principale : <strong>${project.details.typography}</strong></p>
+            </div>`;
+
         modalBody.innerHTML = `
-            <h2 class="text-gradient mb-4" style="font-size: 2rem;">${project.title}</h2>
-            <div class="modal-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="modal-info">
-                    <h3 style="margin-bottom: 1rem; color: var(--primary);">But du projet</h3>
-                    <p class="text-muted" style="margin-bottom: 2rem;">${project.details.goal}</p>
-                    
-                    <h3 style="margin-bottom: 1rem; color: var(--primary);">Charte Graphique</h3>
-                    <div class="design-system" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
-                        <p style="margin-bottom: 0.5rem;">Palette de couleurs :</p>
-                        <div class="color-dots" style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
-                            ${project.details.colors.map(c => `<span class="color-dot" style="background:${c}; width: 30px; height: 30px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2);"></span>`).join('')}
-                        </div>
-                        <p>Typographie principale : <strong>${project.details.typography}</strong></p>
-                    </div>
-                </div>
-                <div class="modal-media">
-                    <h3 style="margin-bottom: 1rem; color: var(--primary);">Aperçu</h3>
-                    <img src="${project.coverImage}" alt="Maquette" style="width: 100%; border-radius: 1rem; border: 1px solid var(--border-color);">
-                    
-                </div>
+        <h2 class="text-gradient mb-4" style="font-size: 2rem;">${project.title}</h2>
+        <div class="modal-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="modal-info">
+                <h3 style="margin-bottom: 1rem; color: var(--primary);">But du projet</h3>
+                <p class="text-muted" style="margin-bottom: 2rem;">${project.details.goal}</p>
+                ${designBlock}
             </div>
-        `;
+            <div class="modal-media">
+                <h3 style="margin-bottom: 1rem; color: var(--primary);">Aperçu</h3>
+                <img src="${project.coverImage}" alt="Maquette"
+                    style="width: 100%; border-radius: 1rem; border: 1px solid var(--border-color);">
+            </div>
+        </div>
+    `;
 
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
