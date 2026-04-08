@@ -157,8 +157,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 typography: "Inter"
             }
          },
-        { slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "/images/projects/formation-digitale-platform/cover.jpg" },
-        { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "/images/projects/supermarket-ecommerce/cover.jpg" },
+        { slug: "formation-digitale-platform", title: "Plateforme de Formation Digitale", category: "figma", tags: ["Figma", "UI/UX", "E-learning", "Web & Mobile App"], shortDesc: "Plateforme web d'e-learning avec cours, planification, communautés, certification et échange avec formateurs.", coverImage: "images/126shots_so.png",
+            details: {
+                goal: "Une application web qui permet de suivre des cours en ligne, de planifier ses sessions d'apprentissage, de rejoindre des communautés d'apprenants, d'obtenir des certifications et d'échanger avec les formateurs, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#FF3D00", "#4042E2", "#ffffff", "#000000", "#00FFAB", "#5F27CD"],
+                typography: "Poppins, Roboto"
+            }
+         },
+        { slug: "supermarket-ecommerce", title: "Plateforme E-commerce Supermarché", category: "figma", tags: ["Figma", "UI/UX", "E-commerce", "Web App"], shortDesc: "Plateforme d'achat en ligne façon supermarché avec panier, paiement et favoris.", coverImage: "images/126shots_so.png",
+            details: {
+                goal: "Une application web qui permet de faire ses courses en ligne façon supermarché, avec un panier d'achat, un système de paiement sécurisé et une fonctionnalité de favoris pour les produits, offrant une expérience utilisateur fluide et moderne.",
+                colors: ["#E3D399", "#BBCB8C", "#ffffff", "#000000", "#C44862", "#47BC4C", "#F6A578"],
+                typography: "Inter, Roboto Serif, Inika, Poppins"
+            }
+         },
         { slug: "controle-routier-app", title: "Application Contrôle Routier", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web & Mobile App"], shortDesc: "Suivi du contrôle routier (assurance, permis, scan de plaque) avec gestion des agents côté admin.", coverImage: "/images/projects/controle-routier-app/cover.jpg" },
         { slug: "odoo-bostonsolux", title: "Application Mobile Odoo – BostonSolux", category: "figma", tags: ["Figma", "UI/UX", "ERP", "Mobile App"], shortDesc: "Application mobile Odoo personnalisée pour la gestion interne de BostonSolux.", coverImage: "/images/projects/odoo-bostonsolux/cover.jpg" },
         { slug: "bostonsolux-website", title: "Refonte Site BostonSolux Security", category: "figma", tags: ["Figma", "UI/UX", "Sécurité", "Web App"], shortDesc: "Refonte complète du site web de BostonSolux Security pour une image plus moderne et professionnelle.", coverImage: "/images/projects/bostonsolux-website/cover.jpg" },
