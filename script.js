@@ -271,7 +271,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 goal: "Pratiquer les concepts avancés du Python à travers des cas concrets.",
                 githubLink: "https://github.com/Florasika/Mini_exo_python.git"
             }
-         },
+        },
+        { slug: "Flow Generate", title: "Flow Generate", category: "dev", tags: ["Node JS", "React JS", "Scripts"], shortDesc: "Application web de génération de facture, de dévis, et de CV.", coverImage: "images/Facture.png",
+            details: {
+                goal: "Application web de génération de facture, de dévis, et de CV. Une application qui génère une lettre de motivation en fonction de votre CV et où vous pouvez faire le suivi de vos candidatures.",
+                Link: "https://facture.flowkraftagency.com/"
+            }
+        },
         { slug: "exercices-reactjs", title: "Projets React JS", category: "dev", tags: ["React", "JavaScript", "Frontend", "Hooks"], shortDesc: "Applications React avec hooks, gestion d'état, composants réutilisables et appels API.", coverImage: "/images/projects/exercices-reactjs/cover.jpg" },
         { slug: "exercices-mongodb", title: "Projets MongoDB", category: "dev", tags: ["MongoDB", "NoSQL", "Node.js", "Backend"], shortDesc: "Exercices MongoDB : modélisation de données, requêtes CRUD, agrégation et index.", coverImage: "/images/projects/exercices-mongodb/cover.jpg" },
         { slug: "exercices-sql", title: "Projets SQL", category: "dev", tags: ["SQL", "MySQL", "PostgreSQL", "Base de données"], shortDesc: "Exercices SQL : modélisation relationnelle, requêtes complexes, jointures et procédures stockées.", coverImage: "/images/projects/exercices-sql/cover.jpg" }
