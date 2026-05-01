@@ -266,13 +266,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 githubLink: "https://github.com/Florasika/JS_exo.git"
             }
         },
-        { slug: "exercices-python", title: "Projets Python", category: "dev", tags: ["Python", "Backend", "Scripts"], shortDesc: "Exercices et scripts Python : algorithmique, traitement de fichiers, POO.", coverImage: "images/py.png",
+        {
+            slug: "exercices-python", title: "Projets Python", category: "dev", tags: ["Python", "Backend", "Scripts"], shortDesc: "Exercices et scripts Python : algorithmique, traitement de fichiers, POO.", coverImage: "images/py.png",
             details: {
                 goal: "Pratiquer les concepts avancés du Python à travers des cas concrets.",
                 githubLink: "https://github.com/Florasika/Mini_exo_python.git"
             }
         },
-        { slug: "Flow Generate", title: "Flow Generate", category: "dev", tags: ["Node JS", "React JS", "Scripts"], shortDesc: "Application web de génération de facture, de dévis, et de CV.", coverImage: "images/Facture.png",
+        {
+            slug: "Flow Generate", title: "Flow Generate", category: "dev", tags: ["Node JS", "React JS", "Scripts"], shortDesc: "Application web de génération de facture, de dévis, et de CV.", coverImage: "images/Facture.png",
             details: {
                 goal: "Application web de génération de facture, de dévis, et de CV. Une application qui génère une lettre de motivation en fonction de votre CV et où vous pouvez faire le suivi de vos candidatures.",
                 Link: "https://facture.flowkraftagency.com/"
@@ -310,27 +312,43 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
 
         } else if (isDev) {
+            const hasGithub = !!project.details.githubLink;
+            const hasLink = !!project.details.Link;
+
+            const linkBtn = hasGithub
+                ? `<a href="${project.details.githubLink}" target="_blank" rel="noopener noreferrer" class="modal-github-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                        0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                        -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                        .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                        -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+                        c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                        0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+                        0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                Voir sur GitHub
+           </a>`
+                : hasLink
+                    ? `<a href="${project.details.Link}" target="_blank" rel="noopener noreferrer" class="modal-github-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M2 12h20"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                Voir le site
+           </a>`
+                    : `<p style="color: var(--text-muted); font-size: 0.9rem;">Aucun lien disponible pour ce projet.</p>`;
+
             designBlock = `
-            <h3 class="modal-section-title">Code Source</h3>
-            <div class="modal-design-block">
-                <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
-                    Le code source de ce projet est disponible sur GitHub.
-                </p>
-                <a href="${project.details.githubLink}" target="_blank" rel="noopener noreferrer"
-                    class="modal-github-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
-                            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
-                            -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
-                            .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
-                            -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
-                            c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
-                            0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
-                            0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                    </svg>
-                    Voir sur GitHub
-                </a>
-            </div>`;
+        <h3 class="modal-section-title">Accès au projet</h3>
+        <div class="modal-design-block">
+            <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                ${hasGithub ? 'Le code source de ce projet est disponible sur GitHub.' : 'Ce projet est accessible en ligne.'}
+            </p>
+            ${linkBtn}
+        </div>`;
 
         } else {
             const dotsHTML = project.details.colors
