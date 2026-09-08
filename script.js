@@ -252,11 +252,29 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         // DATA ANALYSE
-        { slug: "etl-talend", title: "Projet ETL avec Talend", category: "data", tags: ["Talend", "ETL", "Data Engineering"], shortDesc: "Conception et déploiement d'un pipeline ETL complet avec Talend Open Studio.", coverImage: "/images/projects/etl-talend/cover.jpg" },
-        { slug: "fouille-donnees-titanic", title: "Fouille de Données – Dataset Titanic", category: "data", tags: ["Python", "Machine Learning", "Data Science"], shortDesc: "Analyse prédictive sur le dataset Titanic : régression, KNN, Random Forest et matrice de confusion.", coverImage: "/images/projects/fouille-donnees-titanic/cover.jpg" },
-        { slug: "datavisualisation-orange", title: "Datavisualisation avec Orange", category: "data", tags: ["Orange", "Visualisation", "Data Mining"], shortDesc: "Analyse et visualisation de données avec l'outil Orange Data Mining.", coverImage: "/images/projects/datavisualisation-orange/cover.jpg" },
-        { slug: "entrepot-donnees-powerbi", title: "Entrepôt de Données & PowerBI", category: "data", tags: ["ETL", "PowerBI", "Data Warehouse"], shortDesc: "Conception d'un entrepôt de données avec pipeline ETL et tableaux de bord PowerBI.", coverImage: "/images/projects/entrepot-donnees-powerbi/cover.jpg" },
-        { slug: "powerbi-qualite", title: "PowerBI – Qualité & Visualisation", category: "data", tags: ["PowerBI", "Data Visualization", "Reporting"], shortDesc: "Nettoyage, transformation et visualisation avancée des données avec PowerBI.", coverImage: "/images/projects/powerbi-qualite/cover.jpg" },
+        {
+            slug: "content-python", title: "Série Python – Data Analyst", category: "data",
+            tags: ["Python", "Pandas", "Scikit-learn", "Contenu"],
+            shortDesc: "10 posts sur Python pour la data : nettoyage, visualisation, machine learning.",
+            coverImage: "images/content-python.png",
+            details: {
+                goal: "Série de 10 posts pour apprendre Python appliqué à la data analyse, du nettoyage CSV à la régression linéaire.",
+                tool: "Python", emoji: "🐍", color: "#3B82F6", role: "Data Analyst / Scientist",
+        
+                days: [
+                    { day: 1, title: "Analyse Ventes CSV", concept: "pandas read_csv, groupby, describe()", link: "https://github.com/Florasika/Analyse_ventes" },
+                    { day: 2, title: "Nettoyage données sales", concept: "dropna, fillna, duplicated, astype", link: "https://..." },
+                    { day: 3, title: "Visualisation Matplotlib", concept: "plt.bar, plt.pie, plt.subplots", link: "https://..." },
+                    { day: 4, title: "Dashboard Seaborn", concept: "heatmap, pairplot, boxplot", link: "https://..." },
+                    { day: 5, title: "Scraping Offres Emploi", concept: "requests, BeautifulSoup, json", link: "https://..." },
+                    { day: 6, title: "Analyse Twitter/X API", concept: "API REST, pandas, wordcloud", link: "https://..." },
+                    { day: 7, title: "Régression Linéaire Maisons", concept: "scikit-learn, train_test_split, score", link: "https://..." },
+                    { day: 8, title: "Classification Spam/Ham", concept: "TfidfVectorizer, LogisticRegression", link: "https://..." },
+                    { day: 9, title: "Clustering Clients RFM", concept: "KMeans, StandardScaler, silhouette", link: "https://..." },
+                    { day: 10, title: "Dashboard Plotly Interactif", concept: "plotly.express, go.Figure, dash", link: "https://..." },
+                ]
+            }
+        },
 
         // DÉVELOPPEMENT WEB
         {
