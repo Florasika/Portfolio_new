@@ -252,27 +252,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         // DATA ANALYSE
+       
         {
             slug: "content-python", title: "Série Python – Data Analyst", category: "data",
-            tags: ["Python", "Pandas", "Scikit-learn", "Contenu"],
-            shortDesc: "10 posts sur Python pour la data : nettoyage, visualisation, machine learning.",
-            coverImage: "images/content-python.png",
             details: {
-                goal: "Série de 10 posts pour apprendre Python appliqué à la data analyse, du nettoyage CSV à la régression linéaire.",
-                tool: "Python", emoji: "🐍", color: "#3B82F6", role: "Data Analyst / Scientist",
-        
-                days: [
-                    { day: 1, title: "Analyse Ventes CSV", concept: "pandas read_csv, groupby, describe()", link: "https://github.com/Florasika/Analyse_ventes" },
-                    { day: 2, title: "Nettoyage données sales", concept: "dropna, fillna, duplicated, astype", link: "https://..." },
-                    { day: 3, title: "Visualisation Matplotlib", concept: "plt.bar, plt.pie, plt.subplots", link: "https://..." },
-                    { day: 4, title: "Dashboard Seaborn", concept: "heatmap, pairplot, boxplot", link: "https://..." },
-                    { day: 5, title: "Scraping Offres Emploi", concept: "requests, BeautifulSoup, json", link: "https://..." },
-                    { day: 6, title: "Analyse Twitter/X API", concept: "API REST, pandas, wordcloud", link: "https://..." },
-                    { day: 7, title: "Régression Linéaire Maisons", concept: "scikit-learn, train_test_split, score", link: "https://..." },
-                    { day: 8, title: "Classification Spam/Ham", concept: "TfidfVectorizer, LogisticRegression", link: "https://..." },
-                    { day: 9, title: "Clustering Clients RFM", concept: "KMeans, StandardScaler, silhouette", link: "https://..." },
-                    { day: 10, title: "Dashboard Plotly Interactif", concept: "plotly.express, go.Figure, dash", link: "https://..." },
-                ]
+                goal: "Analyse Ventes CSV",
+                concept: "pandas read_csv, groupby, describe()",
+                githubLink: "https://github.com/Florasika/Analyse_ventes"
             }
         },
 
